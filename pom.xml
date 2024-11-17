@@ -15,17 +15,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <distributionManagement>
-        <snapshotRepository>
-            <id>default-maven</id>
-            <url>https://neusoft.bytesafe.dev/maven/default-maven/</url>
-        </snapshotRepository>
-        <repository>
-            <id>default-maven</id>
-            <url>https://neusoft.bytesafe.dev/maven/default-maven/</url>
-        </repository>
-    </distributionManagement>
-
     <dependencies>
         <dependency>
             <groupId>net.java.dev.jna</groupId>
