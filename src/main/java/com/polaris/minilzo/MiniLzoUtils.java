@@ -6,7 +6,7 @@ public class MiniLzoUtils {
 
     public static byte[] compress(byte[] data) {
         byte[] bytes = new byte[data.length + (data.length / 16) + 64 + 3];
-        byte[] wrkmem = new byte[256];
+        byte[] wrkmem = new byte[data.length * 64 + 2048];
         IntByReference intByReference = new IntByReference();
         // 调用
         int i = MiniLZO.getInstance().lzo1x_1_compress(data, data.length, bytes, intByReference, wrkmem);
